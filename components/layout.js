@@ -11,6 +11,7 @@ export default function Layout({ children, home }) {
   return (
     <div className={styles.container}>
       <Head>
+        <title>{siteTitle}</title>
         <link rel="icon" href="/favicon.ico" />
         <meta
           name="description"
@@ -38,7 +39,7 @@ export default function Layout({ children, home }) {
             />
             <h1 className={utilStyles.heading2Xl}>{name}</h1>
           </>
-        ) : (
+        )  : (
           <>
             <Link href="/">
               <Image
