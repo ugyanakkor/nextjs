@@ -26,6 +26,11 @@ export default function Home({allPostsData}: {
     <Layout home>
       <Head>
         <title>{siteTitle}</title>
+        <meta
+          name="description"
+          content="Check out blogpost of  the past"
+          key="desc"
+        />
       </Head>
       <section className={utilStyles.headingMd}>
         <p>Hue Hue</p>
